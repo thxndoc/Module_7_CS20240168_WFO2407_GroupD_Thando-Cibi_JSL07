@@ -60,7 +60,6 @@ button:hover {
     border: 3px solid #659f8f;
   }
   
-
 .modal-content::before {
   content: "";
   position: absolute;
@@ -90,7 +89,7 @@ button:hover {
   margin: 20px 0;
 }
 
-h1, .modal-content h2, .modal-content p {
+.modal-content h1, .modal-content h2, .modal-content p {
   color: #5d5f5e;
 }
 
