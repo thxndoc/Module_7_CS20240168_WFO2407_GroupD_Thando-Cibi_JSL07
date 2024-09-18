@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById('modal');
     const certificateContent = document.getElementById('certificateContent');
     const closeModal = document.querySelector('.close');
+    console.log('DOM fully loaded');
   
     // Hide the modal initially
     modal.style.display = 'none';
@@ -25,9 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   
       // 🚨 Generate certificate content dynamically
-      certificateContent. = `
-      <h3>${studentName}</h3>
-    `;
+    //   certificateContent. = `
+    //   <h3>${studentName}</h3>
+    // `;
     
       //  Display the modal
       modal.style.display = 'block';
@@ -39,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     //  🚨 Close the modal when the close button is clicked
-    closeModal.addEventListener('click', function () {
-      console.log('This button was clicked')
+    closeModal.addEventListener('click', function() {
+      console.log('This element was clicked')
     });
   });
   
