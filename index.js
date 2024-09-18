@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
       const studentName = studentNameInput.value;
       const personalMessage = personalMessageInput.value;
-      const courseName = courseNameInput ? courseNameInput.value : "a course"; // Fallback to "a course" if no input
+      const courseName = courseNameInput.value ? courseNameInput.value : "a course"; // Fallback to "a course" if no input
   
       if (studentName.trim() === '' || personalMessage.trim() === '') {
         alert('Please fill in all fields');
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
       certificateContent.appendChild(certificateIntroElement);
       
       //student name
-      const studentNameElement = document.createElement('h3');
+      const studentNameElement = document.createElement('h2');
       studentNameElement.textContent = studentName;
       certificateContent.appendChild(studentNameElement);
 
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       //course name
       const courseNameElement = document.createElement('h3');
-      courseNameElement.textContent = `${courseName} Course`;
+      courseNameElement.textContent = courseName;
       certificateContent.appendChild(courseNameElement);
 
       //achievement description
