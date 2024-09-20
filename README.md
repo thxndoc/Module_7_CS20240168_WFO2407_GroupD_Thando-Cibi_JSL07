@@ -1,4 +1,21 @@
-# [JSL07] Submission: Proud of your Progress
+# Challenge overview
+Create a personalized certificate of achievement with the "Proud of Your Progress Certificate Generator" where users can input their name, a personalized message, and the course name to dynamically generate a certificate displayed in a modal.
+
+## What I did
+* Tested if the DOM content had fully loaded.
+* Embedded the raleway google font link in the head tag.
+* Tested the `closeModal` element to see if it the click event listener works.
+* Added `text-wrap: nowrap` in the body in CSS so the achievement description would not wrap to the next line.
+* Added `.modal-content h3` to CSS
+* Did not use `classList.add` in JavaScript. **Why?** because there is a CSS style that targets h1, h2, and p inside the `.modal-content` class which will apply styling to the dynamically generated elements within the modal:
+```JavaScript
+.modal-content h1, .modal-content h2, .modal-content p {
+  color: #5d5f5e;
+}
+```
+Since the h1, h3, and p tags are added into #certificateContent, which is inside .modal-content, they inherit the styling of `modal-content`, which sets the color to #5d5f5e.
+
+## [JSL07] Submission: Proud of your Progress
 
 Create a personalized certificate of achievement with the "Proud of Your Progress Certificate Generator". This web application requires users to input their name, a personalized message, and the course name to dynamically generate a certificate displayed in a modal.
 
