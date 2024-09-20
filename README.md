@@ -13,7 +13,7 @@ Create a personalized certificate of achievement with the "Proud of Your Progres
   color: #5d5f5e;
 }
 ```
-Since the h1, h3, and p tags are added into #certificateContent, which is inside .modal-content, they inherit the styling of `modal-content`, which sets the color to #5d5f5e.
+Since the h1, h3, and p tags are added into #certificateContent, which is inside .modal-content, they inherit the styling of `modal-content`, which sets the color to `#5d5f5e.`
 
 ## [JSL07] Submission: Proud of your Progress
 
